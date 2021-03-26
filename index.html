@@ -1,110 +1,336 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OASIS</title>
-</head>
- <link rel="stylesheet" href="style.css">
-<body>
-    
-    <div id="wrap">
-        <header>
-            <h1>Oasis manual</h1>
-        </header>
-        <section>
-            <div class="contents">
-                <h2>
-                    입원실 매뉴얼
-                </h2>
-                <p>
-                    소독약
-                </p>
-                <div class="1st">
-                    <ol>
-                        <li>Alcohol
-                            <ul>
-                                <li>이소프로필 : 알코올 솜용</li>
-                                <li>에탄올 : 스프레이용</li>
-                            </ul>
-                        </li>
-                        <!-- 알코올 -->
-                        <li>Natural Q(NQ)
-                            <ul>
-                                <li>원액사용</li>
-                            </ul>
-                        </li>
-                        <!-- nq-->
-                        <li>파일솔
-                            <ul>
-                                <li>원액사용</li>
-                                <li>대형견장 청소시 사용</li>
-                            </ul>
-                        </li>
-                        <!-- 파인솔 -->
-                        <li>락스
-                            <ul>
-                                <li>희석용 / 원액 구분해서 사용</li>
-                            </ul>
-                        </li>
-                        <!-- 락스 -->
-                        <li>헥시딘
-                            <ul>
-                                <li>피부 소독제
-                                    <p>점막에 사용할 경우 녹아내릴 수 있음 (점막 : 눈 점막 , 귀 점막 등등 ) red</p>
-                                    <h5>희석비율</h6>
-                                        <ul>
-                                            <li>0.5%  = 원액 10ml / 멸균증류수 90ml</li>
-                                            <li>0.05% = 원액 1ml  / 멸균증류수 99ml</li>
-                                        </ul>
-                                    <p>&lt;수술한지 얼마 되지 않은 환축이나 상처가 완전히 아물지 않은 확축의 경우 0.05% 헥시딘 사용 &gt; rad</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- 헥시딘 -->
-                        <li> 헥시놀
-                            <ul>
-                                <li>원액사용</li>
-                                <li>술전 피부소독제</li>
-                            </ul>
-                        </li>
-                        <!-- 헥시놀 -->
-                    </ol>
-                    <div>소독력
-                     <ol>
-                         <li>락스</li>
-                         <li>Natural Q(NQ)</li>
-                         <li>파인솔</li>
-                         <li>Alcohol</li>
-                     </ol>
-                    </div>
-                    <!-- 소독력 -->
-                    <div>
-                        <h5>장청소</h5>
-                        <p>에탄올 알코올 사용</p>
-                        <p>소독이 필요한 경우
-                            <ul>
-                                <li>환축의 설사증상</li>
-                                <li>전염병</li>
-                                <li>전염성 피부질환</li>
-                            </ul>
-                            <p>청소방법</p>
-                            <ol>
-                                <li> NQ / 락스 희석액 소독</li>
-                                <li>장을 깨끗하게 걸레로 닦은 후</li>
-                                <li>5 ~ 10분간 소독약을 뿌려주어 소독 진행</li>
-                                <li>닦은걸레는 락스 희석액에 10분 정도 놔둔후 일반빨래와 세탁</li>
-                            </ol>
-                            <!-- 청소방법 -->
-                        </p>
-                    </div>
-                    <!-- 청소 -->
-                </div>
-                <!-- 1st -->
-            </div>
-        </section>
 
-    </div>    
+    <!-- css -->
+    <link href="css/bootstrapTheme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/isotope.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+
+
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        #clock {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Title">
+        <p>OASIS</p>
+    </div>
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                    <div class="header_tit">
+                            <!-- dog-ani -->
+                        <div id="dog_ani">
+                            <div class="dog">
+                                <div class="dog-body">
+                                    <div class="dog-tail">
+                                        <div class="dog-tail">
+                                            <div class="dog-tail">
+                                                <div class="dog-tail">
+                                                    <div class="dog-tail">
+                                                        <div class="dog-tail">
+                                                            <div class="dog-tail">
+                                                                <div class="dog-tail"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dog-torso"></div>
+                                <div class="dog-head">
+                                    <div class="dog-ears">
+                                        <div class="dog-ear"></div>
+                                        <div class="dog-ear"></div>
+                                    </div>
+                                    <div class="dog-eyes">
+                                        <div class="dog-eye"></div>
+                                        <div class="dog-eye"></div>
+                                    </div>
+                                    <div class="dog-muzzle">
+                                        <div class="dog-tongue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1>OASIS manual</h1>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+
+
+    <!-- contents -->
+    <div id="customizing">
+        <div class="container">
+
+            <div class="row">
+                <div id="options" class="gridly">
+                    <ul class="filter option-set" data-filter-group="color">
+                        <li><a href="#filter-color-any" data-filter-value="" class="selected">전체보기</a></li>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Disinfection">소독</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Hospitalization">입원견관리</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Clinic">진료</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Operation">수술</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".refer">정리</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Blood">혈액검사</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard"
+                                data-filter-value=".Emergency">비상사태</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row" id="middle" style="margin-left:16px;">
+                <div id="container" class="clearfix">
+
+                    <!-- box -->
+                    <section class="color-shape Disinfection">
+                        <a href="class/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">Disinfection</span>
+                                    <span class="overlay-text-thumb-donut">소독</span>
+                                    <span class="overlay-text-thumb1-donut">important</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/023-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>Disinfection</h5>
+                                    <p>소독</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+                    <!-- box -->
+                    <section class="color-shape Hospitalization">
+                        <a href="study/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">Hospitalization</span>
+                                    <span class="overlay-text-thumb-donut">입원</span>
+                                    <span class="overlay-text-thumb1-donut">관리</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/011-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>Hospitalization</h5>
+                                    <p>입원</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+
+                    <!-- box -->
+                    <section class="color-shape Clinic">
+                        <a href="html/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">Clinic</span>
+                                    <span class="overlay-text-thumb-donut">진료</span>
+                                    <span class="overlay-text-thumb1-donut">정형/신경</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/015-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>Clinic</h5>
+                                    <p>진료</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+                    <!-- box -->
+                    <section class="color-shape Operation">
+                        <a href="css/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">Operation</span>
+                                    <span class="overlay-text-thumb-donut">수술</span>
+                                    <span class="overlay-text-thumb1-donut">important</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/019-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>Operation</h5>
+                                    <p>수술</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+                    <!-- box -->
+                    <section class="color-shape Blood">
+                        <a href="File/blood test/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">blood test</span>
+                                    <span class="overlay-text-thumb-donut">혈액검사</span>
+                                    <span class="overlay-text-thumb1-donut">화학검사</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/030-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>blood test</h5>
+                                    <p>혈액검사</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+                    <!-- box -->
+                    <section class="color-shape Emergency">
+                        <a href="illustrator/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">Emergency</span>
+                                    <span class="overlay-text-thumb-donut">응급상황</span>
+                                    <span class="overlay-text-thumb1-donut">ER</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/031-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>Emergency</h5>
+                                    <p>응급상황</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+                     <!-- box -->
+                     <section class="color-shape refer">
+                        <a href="study/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">STUDY</span>
+                                    <span class="overlay-text-thumb-donut">정리</span>
+                                    <span class="overlay-text-thumb1-donut">용어</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/035-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>STUDY</h5>
+                                    <p>정리</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
+
+                </div>
+                <!-- //container-->
+            </div>
+            <!-- //row -->
+        </div>
+
+
+    <!-- script -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script>
+        $(function () {
+            var $container = $('#container'),
+                filters = {};
+
+            $container.isotope({
+                itemSelector: '.color-shape',
+                masonry: {
+                    columnWidth: 57
+                }
+            });
+
+            // filter buttons
+            $('.filter a').click(function () {
+                var $this = $(this);
+                // don't proceed if already selected
+                if ($this.hasClass('selected')) {
+                    return;
+                }
+
+                var $optionSet = $this.parents('.option-set');
+                // change selected class
+                $optionSet.find('.selected').removeClass('selected');
+                $this.addClass('selected');
+
+                // store filter value in object
+                // i.e. filters.color = 'red'
+                var group = $optionSet.attr('data-filter-group');
+                filters[group] = $this.attr('data-filter-value');
+                // convert object into array
+                var isoFilters = [];
+                for (var prop in filters) {
+                    isoFilters.push(filters[prop])
+                }
+                var selector = isoFilters.join('');
+                $container.isotope({
+                    filter: selector
+                });
+
+                return false;
+            });
+
+            $('.tit_btn').on('click', function (e) {
+                e.preventDefault();
+                $('.nav_container').toggleClass('on');
+            });
+
+            $(".click").click(function () {
+                $(".view").fadeToggle();
+            });
+
+        });
+    </script>
 </body>
+
 </html>
+<!-- webstoryboy.co.kr -->
