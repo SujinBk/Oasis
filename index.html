@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="span12" style="text-align:center;">
                     <div class="header_tit">
-                            <!-- dog-ani -->
+                        <!-- dog-ani -->
                         <div id="dog_ani">
                             <div class="dog">
                                 <div class="dog-body">
@@ -81,7 +81,7 @@
                         </div>
                         <h1>OASIS manual</h1>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -98,16 +98,20 @@
                 <div id="options" class="gridly">
                     <ul class="filter option-set" data-filter-group="color">
                         <li><a href="#filter-color-any" data-filter-value="" class="selected">전체보기</a></li>
-                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Disinfection">소독</a>
-                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Hospitalization">입원견관리</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard"
+                                data-filter-value=".Disinfection">소독</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard"
+                                data-filter-value=".Hospitalization">입원견관리</a>
                         <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Clinic">진료</a>
-                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Operation">수술</a>
+                        <li class="webstandard"><a href="#filter-color-webstandard"
+                                data-filter-value=".Operation">수술</a>
                         <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".refer">정리</a>
                         <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".Blood">혈액검사</a>
                         <li class="webstandard"><a href="#filter-color-webstandard"
                                 data-filter-value=".Emergency">비상사태</a>
 
                         </li>
+                        <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".checkup">건강검진프로그램</a>
                     </ul>
                 </div>
             </div>
@@ -243,8 +247,8 @@
                     </section>
                     <!-- //box -->
 
-                     <!-- box -->
-                     <section class="color-shape refer">
+                    <!-- box -->
+                    <section class="color-shape refer">
                         <a href="File/refer/index.html" target="_blank">
                             <div class="image-wrap">
                                 <div class="hover-wrap">
@@ -264,6 +268,27 @@
                     </section>
                     <!-- //box -->
 
+                    <!-- box -->
+                    <section class="color-shape checkup">
+                        <a href="File/refer/index.html" target="_blank">
+                            <div class="image-wrap">
+                                <div class="hover-wrap">
+                                    <span class="overlay-img-donut">checkup</span>
+                                    <span class="overlay-text-thumb-donut">건강검진</span>
+                                    <span class="overlay-text-thumb1-donut">프로그램 안내</span>
+                                    <span class="overlay-text-thumb2-donut">OASIS</span>
+                                </div>
+                                <img src="img/svg/045-dog.svg" alt="portfolio">
+                                <div class="img-text donutImg">
+                                    <h5>checkup</h5>
+                                    <p>검진프로그램안내</p>
+                                    <span>OASIS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                    <!-- //box -->
+
 
                 </div>
                 <!-- //container-->
@@ -272,64 +297,64 @@
         </div>
 
 
-    <!-- script -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script>
-        $(function () {
-            var $container = $('#container'),
-                filters = {};
+        <!-- script -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap-collapse.js"></script>
+        <script src="js/bootstrap-transition.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script>
+            $(function () {
+                var $container = $('#container'),
+                    filters = {};
 
-            $container.isotope({
-                itemSelector: '.color-shape',
-                masonry: {
-                    columnWidth: 57
-                }
-            });
-
-            // filter buttons
-            $('.filter a').click(function () {
-                var $this = $(this);
-                // don't proceed if already selected
-                if ($this.hasClass('selected')) {
-                    return;
-                }
-
-                var $optionSet = $this.parents('.option-set');
-                // change selected class
-                $optionSet.find('.selected').removeClass('selected');
-                $this.addClass('selected');
-
-                // store filter value in object
-                // i.e. filters.color = 'red'
-                var group = $optionSet.attr('data-filter-group');
-                filters[group] = $this.attr('data-filter-value');
-                // convert object into array
-                var isoFilters = [];
-                for (var prop in filters) {
-                    isoFilters.push(filters[prop])
-                }
-                var selector = isoFilters.join('');
                 $container.isotope({
-                    filter: selector
+                    itemSelector: '.color-shape',
+                    masonry: {
+                        columnWidth: 57
+                    }
                 });
 
-                return false;
-            });
+                // filter buttons
+                $('.filter a').click(function () {
+                    var $this = $(this);
+                    // don't proceed if already selected
+                    if ($this.hasClass('selected')) {
+                        return;
+                    }
 
-            $('.tit_btn').on('click', function (e) {
-                e.preventDefault();
-                $('.nav_container').toggleClass('on');
-            });
+                    var $optionSet = $this.parents('.option-set');
+                    // change selected class
+                    $optionSet.find('.selected').removeClass('selected');
+                    $this.addClass('selected');
 
-            $(".click").click(function () {
-                $(".view").fadeToggle();
-            });
+                    // store filter value in object
+                    // i.e. filters.color = 'red'
+                    var group = $optionSet.attr('data-filter-group');
+                    filters[group] = $this.attr('data-filter-value');
+                    // convert object into array
+                    var isoFilters = [];
+                    for (var prop in filters) {
+                        isoFilters.push(filters[prop])
+                    }
+                    var selector = isoFilters.join('');
+                    $container.isotope({
+                        filter: selector
+                    });
 
-        });
-    </script>
+                    return false;
+                });
+
+                $('.tit_btn').on('click', function (e) {
+                    e.preventDefault();
+                    $('.nav_container').toggleClass('on');
+                });
+
+                $(".click").click(function () {
+                    $(".view").fadeToggle();
+                });
+
+            });
+        </script>
 </body>
 
 </html>
